@@ -14,7 +14,7 @@ for eq_dict in all_eq_dicts:
     lons.append(eq_dict['geometry']['coordinates'][0])
     lats.append(eq_dict['geometry']['coordinates'][1])
     eq_titles.append(eq_dict['properties']['title'])
-title = 'Global Earthquakes'
+title = 'Global Earthquakes in 2024 July'
 fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title,
                      color=mags,
                      color_continuous_scale='tempo',
